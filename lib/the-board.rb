@@ -4,6 +4,7 @@ require "the-board/error"
 require "the-board/api_client"
 require "the-board/resource"
 require "the-board/resources/client"
+require "the-board/resources/contact"
 
 module TheBoard
   extend Configuration
