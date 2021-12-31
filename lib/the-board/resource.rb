@@ -15,6 +15,11 @@ module TheBoard
         client.request
       end
 
+      def load(id, params = {})
+        client = ApiClient.new("#{self::RESOURCE_COLLECTION}/#{id}", :get, params)
+        client.request
+      end
+
       def update(id, params = {})
         client = ApiClient.new("#{self::RESOURCE_COLLECTION}/#{id}", :put, params)
         client.request
